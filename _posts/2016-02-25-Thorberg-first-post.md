@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thorberg first post"
-date: 2014-04-30
+date: 2033-01-01
 ---
 
-Well Fuck. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+Well Well.. It works! Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
