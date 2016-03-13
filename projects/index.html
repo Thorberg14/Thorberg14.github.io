@@ -9,35 +9,17 @@ My software development career starts with PC games.
 The games was the reason I started with programming. 
 As you can see, most of the following projects will prove that :)
 </p>
-<h2>Pascal Games</h2>
-<p>
-First games I created was made in simple old Pascal. Graphics of the game contains only of console and ASCII characters. 
-</p>
-<ul>
-	<li> Bomber Attack </li>
-	<li> Snake </li>
-	<li> Horse racing </li>
-</ul>
 
-<h2>Java Games</h2>
-<p>
-These projects are 'second generation' of my development. Games are made in Java using Swing GUI.  
-</p>
-<ul>
-	<li> Oh Those Russians </li>
-	<li> Way of Destiny </li>
-</ul>
-
-<h2>School Projects</h2>
-<p>
-These projects were made for learning purposes at school.  
-</p>
-<ul>
-	<li> Dating Portal </li>
-	<li> UDP Communicator </li>
-	<li> 3D OpenGL Game </li>
-	<li> Transport Network Analyzator </li>
-</ul>
-
+{% for category in site.data.projectCategories %}
+  <h2> {{ category.name }} </h2>
+  <p> {{category.desc }} </p>
+   	<ul>
+		{% assign file = {{category.name}} | replace: ' ', '_' %}
+		{% for project in site.data.projects[{{file}}] %}
+  		<li>{{project.name}}</li>
+		{% endfor %}
+	</ul>
+  <hr>
+{% endfor %}
 
 

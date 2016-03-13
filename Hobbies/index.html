@@ -6,9 +6,7 @@ title: what do I like
 <h1> My hobbies </h1>
 
 <ul>
-	<li> Software Development </li>
-	<li> Games </li>
-	<li> Music </li>
-	<li> History </li>
-	<li> Nature </li>
+{% for hobby in site.data.hobbies %}
+  <li> {{ hobby.name }} </li>
+{% endfor %}
 </ul>
