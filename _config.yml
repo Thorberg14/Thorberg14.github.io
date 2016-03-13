@@ -1,2 +1,12 @@
-name: Thorberg, the barbarian
+name: Richard Randak
 markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      real_name: "Richard"
+      pseudo_name: "Thorberg"
+      faculty: "FIIT STU"
+      home_city: "Bratislava"
+      home_state: "Slovakia"

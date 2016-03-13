@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: comment
 title: "Another post"
 date: 2016-03-10
 ---

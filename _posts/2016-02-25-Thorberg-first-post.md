@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: comment
 title: "Thorberg first post"
 date: 2016-02-25
 ---
