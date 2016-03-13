@@ -14,9 +14,16 @@ As you can see, most of the following projects will prove that :)
   <h2> {{ category.name }} </h2>
   <p> {{category.desc }} </p>
    	<ul>
-		{% assign file = {{category.name}} | replace: ' ', '_' %}
-		{% for project in site.data.projects[{{file}}] %}
-  		<li>{{project.name}}</li>
+	{% assign file = {{category.name}} | replace: ' ', '_' %}
+	{% for project in site.data.projects[{{file}}] %}
+  		<li>
+		{% if project.link == 'false' %}
+			{{project.name}}
+		{% else %}
+			{% assign link = {{project.name}} | replace: ' ', '_' | append: '.html' %}
+			<a href="{{link}}">{{project.name}}</a>
+		{% endif %}
+		</li>
 		{% endfor %}
 	</ul>
   <hr>
