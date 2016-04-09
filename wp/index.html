@@ -8,3 +8,33 @@ title: Web Publishing
 <p>
 Web-Publishing is subject at {{page.faculty}} in sixth bachelor semester.
 This page is made as one of tasks, which are necessary to pass trough it.
+
+<h2>Task 1</h2>
+<h3>Home page on GitHub </h3>
+<p> This task was about using technologies to create own home page. It was mandatory to work with Git, GitHub Pages and Jekyll.
+This page is the result.</p>
+
+</h2>Task 2</h2>
+<h3>Transformation of chosen document to DocBook format</h3>
+<p>
+Document, which I have chosen for transformatinon, is my Bachelor thesis documentation. 
+This document was made using Texmaker, which uses LaTeX format. So, it should not be a problem to convert this format to DocBook.
+DocBook uses XML tags. 
+</p>
+<p>I used XMLmind as editor for creating it. I already had book template consisting of title page, 
+one chapter, appendix and bibliography. This I used as baseground for further work. Most of the work consist just from copying text 
+from LaTeX document and rewriting sLaTeX sytax to DocBoox syntax. For example, in Latex I used "\emph{text}" or \textbf{text} for emphasizing the important word.
+In DocBook it is nearly the same - <emphasis>some text</emphasis>. For bold text I had to use <emphasis role="bold"> tag. Unfortunetly, I 
+did not find simple tag for line break as \newline or \\ in LaTeX. Therefore I used <literallayout> tag for inserting texts, in which I need to have control over the line breaks.
+Citation and references construction was also very similar to LaTeX.
+</p>
+<p>
+The main structure of the DocBook document consits of Chapters, which can be then splitted into sections <Section> tag.
+Sections consist mostly of sub-sections ( <section> tag again) paragraphs (<para> tag), figures ( <figure> ) and item lists ( <itemizedlist mark="opencircle"> ).
+</p>
+<p> 
+Additional features, which I did not used in LaTeX was Book Index, in which the selected words can be added. 
+Then it shows sorted alphabetical list of the word and the page where the word is used. 
+For this feature is needed <index/> to show the list, and <indexterm><primal>Word</primal> <secondary>optional secondary</secondary> <indexterm> construction to add the word to the list.
+It is important, where this cosntruction is written. The shown page number depends on it.
+</p>
