@@ -24,17 +24,17 @@ DocBook uses XML tags.
 <p>I used XMLmind as editor for creating it. I already had book template consisting of title page, 
 one chapter, appendix and bibliography. This I used as baseground for further work. Most of the work consist just from copying text 
 from LaTeX document and rewriting sLaTeX sytax to DocBoox syntax. For example, in Latex I used "\emph{text}" or \textbf{text} for emphasizing the important word.
-In DocBook it is nearly the same - <emphasis>some text</emphasis>. For bold text I had to use <emphasis role="bold"> tag. Unfortunetly, I 
-did not find simple tag for line break as \newline or \\ in LaTeX. Therefore I used <literallayout> tag for inserting texts, in which I need to have control over the line breaks.
+In DocBook it is nearly the same - &lt;emphasis&gt;some text&lt;/emphasis&gt;. For bold text I had to use &lt;emphasis role="bold"&gt; tag. Unfortunetly, I 
+did not find simple tag for line break as \newline or \\ in LaTeX. Therefore I used &lt;literallayout&gt; tag for inserting texts, in which I need to have control over the line breaks.
 Citation and references construction was also very similar to LaTeX.
 </p>
 <p>
-The main structure of the DocBook document consits of Chapters, which can be then splitted into sections <Section> tag.
-Sections consist mostly of sub-sections ( <section> tag again) paragraphs (<para> tag), figures ( <figure> ) and item lists ( <itemizedlist mark="opencircle"> ).
+The main structure of the DocBook document consits of Chapters, which can be then splitted into sections &lt;Section&gt; tag.
+Sections consist mostly of sub-sections ( &lt;section&gt; tag again) paragraphs (&lt;para&gt; tag), figures ( &lt;figure&gt; ) and item lists ( &lt;itemizedlist mark="opencircle"&gt; ).
 </p>
 <p> 
 Additional features, which I did not used in LaTeX was Book Index, in which the selected words can be added. 
 Then it shows sorted alphabetical list of the word and the page where the word is used. 
-For this feature is needed <index/> to show the list, and <indexterm><primal>Word</primal> <secondary>optional secondary</secondary> <indexterm> construction to add the word to the list.
+For this feature is needed &lt;index/&gt; to show the list, and &lt;indexterm&gt;&lt;primal&gt;Word&lt;/primal&gt; &lt;secondary&gt;optional secondary&lt;/secondary&gt; &lt;indexterm&gt; construction to add the word to the list.
 It is important, where this cosntruction is written. The shown page number depends on it.
 </p>
