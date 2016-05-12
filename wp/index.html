@@ -35,3 +35,15 @@ Then it shows sorted alphabetical list of the word and the page where the word i
 For this feature is needed &lt;index/&gt; to show the list, and &lt;indexterm&gt;&lt;primal&gt;Word&lt;/primal&gt; &lt;secondary&gt;optional secondary&lt;/secondary&gt; &lt;indexterm&gt; construction to add the word to the list.
 It is important, where this cosntruction is written. The shown page number depends on it.
 </p>
+<h2>Task 3 - XML presentation</h2>
+<p>
+My task was to design DTD for XML presentation, then create example of presentation and finally transform it via XSL to HTML and PDF format.
+</p>
+<p>
+  DTD which I created consits of basic elements for structure,  &lt;slide&gt;, &lt;para&gt; for paragraph and &lt;list&gt; for list of items. 
+  Naturally, I added few elements for text style, like bold and italic text. In element &lt;meta&gt; must be added presentation title and author name. there can be also added company name and logo, and date.
+</p>
+<p>Slide must have one header. After that can consits of images, lists, paragraphs, and empty lines </p>
+<p> For adding image, there is needed to add url. Image can have also defined size and caption</p>
+<p> For whole presentation, there can be defined sources which was used in presentation. It starts with tag &lt;sources&gt;. If it was used, in the end of final presentation will be added one more slides with the list of sources. </p>
+
